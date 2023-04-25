@@ -5,6 +5,7 @@ $ sudo airodump-ng <wireless interface>
 
 
 $ sudo airodump-ng -c <channel> --bssid <BSSID> -w <output file> <wireless interface>
+$ airodump-ng -c <channel> --ivs -w <output file> --output-format pcap <wireless interface>
 
 
 $ sudo aireplay-ng -3 -b <BSSID> -h <your MAC address> <wireless interface>
