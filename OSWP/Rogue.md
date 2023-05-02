@@ -1,4 +1,5 @@
 kali@kali:~$ cat Mostar-mana.conf
+```
 interface=wlan0
 ssid=Mostar
 channel=1
@@ -10,6 +11,7 @@ wpa_passphrase=ANYPASSWORD
 wpa_pairwise=TKIP
 rsn_pairwise=TKIP CCMP
 mana_wpaout=/home/kali/mostar.hccapx
+```
 
 kali@kali:~$ sudo hostapd-mana Mostar-mana.conf 
 
