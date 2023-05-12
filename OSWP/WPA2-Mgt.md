@@ -48,7 +48,8 @@ wireshark ile aciriq
 ![image](https://user-images.githubusercontent.com/90620429/235653289-865d2d9e-ba38-4458-ab3a-fbe22a358bd3.png)
 
 
-![image](https://user-images.githubusercontent.com/90620429/235653318-de6c1cb7-7c66-4c99-bd99-fae4a9be0656.png)
+![image](https://github.com/al1z4deh/OSWP/assets/90620429/cf3c67c3-00ca-4ebd-a375-f6e5da7d42ea)
+
 
 
 ![image](https://user-images.githubusercontent.com/90620429/235653399-ec84426b-dc36-4995-972e-72bd42b0f795.png)
