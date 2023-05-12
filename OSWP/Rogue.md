@@ -8,7 +8,7 @@ ieee80211n=1
 wpa=3
 wpa_key_mgmt=WPA-PSK
 wpa_passphrase=ANYPASSWORD
-wpa_pairwise=TKIP
+wpa_pairwise=TKIP CCMP
 rsn_pairwise=TKIP CCMP
 mana_wpaout=/home/kali/mostar.hccapx
 ```
