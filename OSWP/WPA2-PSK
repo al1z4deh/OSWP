@@ -10,6 +10,8 @@ sudo aireplay-ng -0 1 -a 10:FE:ED:D1:xx:xx -c 30:07:4D:57:xx:xx wlan0  // -c= cl
 
 sudo aircrack-ng -w hash wpa-01.cap
 
+sudo aircrack-ng -w /usr/share/john/password.lst -e <ssid> -b <mac> wpa-01.cap
+
 ## connect ap via terminal
 
 
