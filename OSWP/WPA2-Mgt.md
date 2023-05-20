@@ -74,3 +74,6 @@ onnan sonra biraz gozle yada airplay at tezeden qosulsun
 
 
 ref: https://portal.offsec.com/courses/pen-210/books-and-videos/modal/video/attacking-wpa-enterprise/attack/attack
+
+
+https://vimeo.com/192497350
